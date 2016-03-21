@@ -26,3 +26,22 @@ subprojects {
         }
     }
 }
+
+release {
+    buildTasks = ['releaseBuild']
+}
+
+task releaseBuild {
+    dependsOn(
+            'bluewhale:clean',
+            'bluewhale:build',
+            'bluewhale:publish',
+            'krill:clean',
+            'krill:build',
+            'krill:publish',
+            'tropicalFish:clean',
+            'tropicalFish:build',
+            'tropicalFish:publish'
+    )
+}
+
