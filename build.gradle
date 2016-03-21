@@ -5,6 +5,10 @@ buildscript {
     }
 }
 
+plugins {
+    id 'net.researchgate.release' version '2.3.4'
+}
+
 repositories {
     mavenCentral()
 }
