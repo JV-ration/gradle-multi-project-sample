@@ -6,7 +6,7 @@ buildscript {
 }
 
 plugins {
-    id 'net.researchgate.release' version '2.3.4'
+    id 'net.researchgate.release' version '2.3.5'
 }
 
 repositories {
