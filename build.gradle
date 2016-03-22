@@ -45,7 +45,7 @@ task releaseBuild {
     )
 }
 
-task setVersionInBashScript {
+task setVersionInBashScript << {
     println 'Will set version in bash script'
 }
 
