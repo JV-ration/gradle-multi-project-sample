@@ -45,3 +45,9 @@ task releaseBuild {
     )
 }
 
+task setVersionInBashScript {
+    println 'Will set version in bash script'
+}
+
+afterReleaseBuild.dependsOn setVersionInBashScript
+
